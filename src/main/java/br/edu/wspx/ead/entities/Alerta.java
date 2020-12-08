@@ -9,7 +9,7 @@ public class Alerta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idAlerta;
-	
+
 	private String descricao;
 	
 	private String titulo;

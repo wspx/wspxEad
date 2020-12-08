@@ -18,7 +18,7 @@ public class Tarefa {
 	
 	private Date vencimento;
 	
-	private Boolean BloquearTarefa;
+	private Boolean bloquearTarefa;
 	
 	
 	//GETTERS AND SETTERS
@@ -64,11 +64,11 @@ public class Tarefa {
 	}
 
 	public Boolean getBloquearTarefa() {
-		return BloquearTarefa;
+		return bloquearTarefa;
 	}
 
 	public void setBloquearTarefa(Boolean bloquearTarefa) {
-		BloquearTarefa = bloquearTarefa;
+		this.bloquearTarefa = bloquearTarefa;
 	}
 	
 }

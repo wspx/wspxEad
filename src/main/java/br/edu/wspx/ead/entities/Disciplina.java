@@ -1,6 +1,6 @@
 package br.edu.wspx.ead.entities;
 
-import java.util.Set;
+import java.util.List;
 import javax.persistence.*;
 
 @Entity
@@ -16,7 +16,7 @@ public class Disciplina {
 	private String sigla;
 	
 	@OneToMany
-	private Set<Tarefa> tarefas;
+	private List<Tarefa> tarefas;
 	
 	
 	//GETTERS AND SETTERS
@@ -45,11 +45,11 @@ public class Disciplina {
 		this.sigla = sigla;
 	}
 
-	public Set<Tarefa> getTarefas() {
+	public List<Tarefa> getTarefas() {
 		return tarefas;
 	}
 
-	public void setTarefas(Set<Tarefa> tarefas) {
+	public void setTarefas(List<Tarefa> tarefas) {
 		this.tarefas = tarefas;
 	}
 	

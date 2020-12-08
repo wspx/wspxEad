@@ -1,6 +1,6 @@
 package br.edu.wspx.ead.entities;
 
-import java.util.Set;
+import java.util.List;
 import javax.persistence.*;
 
 @Entity
@@ -19,7 +19,7 @@ public class Aluno {
 	private String cpf;
 	
 	@OneToMany
-	private Set<Disciplina> disciplinas;
+	private List<Disciplina> disciplinas;
 
 	
 	//GETTERS AND SETTERS
@@ -64,11 +64,11 @@ public class Aluno {
 		this.cpf = cpf;
 	}
 
-	public Set<Disciplina> getDisciplinas() {
+	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
 
-	public void setDisciplinas(Set<Disciplina> disciplinas) {
+	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
 	
