@@ -14,4 +14,6 @@ public interface AlunoService {
 	Aluno cadastrarAluno(Aluno novoAluno);
 	Aluno alterarAluno(Aluno alterarAluno);
 	void excluirAluno(Integer idAluno);
+	
+	Aluno logar(String email, String senha);
 }

@@ -52,4 +52,10 @@ public class ProfessorServiceImplementation implements ProfessorService{
 		repository.deleteById(idProfessor);
 	}
 
+	@Override
+	public Professor logar(String email, String senha) {
+		Professor professor = repository.findProfessorByEmailAndSenha(email, senha);
+		return professor;
+	}
+
 }

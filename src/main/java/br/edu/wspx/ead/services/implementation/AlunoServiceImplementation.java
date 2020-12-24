@@ -54,4 +54,10 @@ public class AlunoServiceImplementation implements AlunoService{
 	public void excluirAluno(Integer idAluno) {
 		repository.deleteById(idAluno);
 	}
+
+	@Override
+	public Aluno logar(String email, String senha) {
+		Aluno aluno = repository.findAlunoByEmailAndSenha(email, senha);
+		return aluno;
+	}
 }

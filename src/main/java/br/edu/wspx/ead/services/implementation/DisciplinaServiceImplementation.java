@@ -52,6 +52,5 @@ public class DisciplinaServiceImplementation implements DisciplinaService{
 	public void excluirDisciplina(Integer idDisciplina) {
 		repository.deleteById(idDisciplina);
 	}
-
 	
 }

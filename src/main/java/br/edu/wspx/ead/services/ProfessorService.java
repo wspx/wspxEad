@@ -13,4 +13,6 @@ public interface ProfessorService {
 	Professor cadastrarProfessor(Professor novoProfessor);
 	Professor alterarProfessor(Professor alterarProfessor);
 	void excluirProfessor(Integer idProfessor);
+	
+	Professor logar(String email, String senha);
 }

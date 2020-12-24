@@ -95,5 +95,5 @@ public class DisciplinaController {
 		
 		return ResponseEntity.ok("{\"message\": \"Deletado com Sucesso!\"}");
 	}
-
+	
 }
